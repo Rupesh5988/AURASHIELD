@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-color: #161a22;
+    --panel-color: #1f242e;
+    --border-color: #363c4a;
+    --text-primary: #e1e7f2;
+    --text-secondary: #8a93a5;
+    --accent-blue: #3b82f6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-primary);
+}
+
+#transaction-network {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    background-color: #12151c;
+    background-image: 
+        linear-gradient(var(--border-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    border: 1px solid var(--border-color);
+}
+
+#transaction-timeline {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+}
+
+.btn {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid var(--border-color);
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.btn:active {
+    transform: translateY(0);
+}
+
+.info-panel {
+    background-color: var(--panel-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.loader {
+    border-top-color: var(--accent-blue);
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* VIS TIMELINE STYLES */
+.vis-timeline {
+    border: none !important;
+}
+.vis-timeline .vis-item {
+    background-color: #2a303c !important;
+    border: 1px solid #4a5160 !important;
+    color: var(--text-primary) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
+    border-radius: 4px !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+    font-family: 'Inter', sans-serif;
+}
+.vis-timeline .vis-item.vis-selected {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 10px #3b82f688 !important;
+    background-color: #3b82f633 !important;
+}
+.vis-timeline .vis-time-axis .vis-text {
+    color: var(--text-secondary) !important;
+}
+.vis-timeline .vis-grid.vis-minor, .vis-timeline .vis-grid.vis-major {
+    border-color: var(--border-color) !important;
+}
+
+/* NAVIGATION BUTTONS */
+.vis-navigation .vis-button {
+    background-color: var(--panel-color) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+}
+.vis-navigation .vis-button:hover {
+    background-color: #2a303c !important;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5) !important;
+}
