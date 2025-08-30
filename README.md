@@ -23,4 +23,5 @@ Backend & ML Engine: Python, Pandas, Scikit-learn, LightGBM, Joblib
 Frontend & Dashboard: HTML, CSS, JavaScript, Tailwind CSS, vis.js, PapaParse
 
 Getting Started
-The system works in two stages: a one-time model training process and an analysis stage for new files. Full, step-by-step instructions on how to run the project can be found in the documentaation folder
+The system works in two stages: a one-time model training process and an analysis stage for new files. Full, step-by-step instructions on how to run the project can be found in the documentation
+
